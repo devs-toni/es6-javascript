@@ -17,15 +17,23 @@
  */
 
 // Create the Person class
-class Person {}
+class Person {
 
+  firstName;
+  lastName;
+
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
 // Create a new instance of the class with the arguments:
 //
 // firstName: "Ana"
 // lastName: "Spark"
 //
 // Store the new instance in the `ana` variable
-let ana = "";
+let ana = new Person("Ana", "Spark");
 
 // Don’t change the code bellow this line
 export { Person, ana };
@@ -33,5 +41,5 @@ export { Person, ana };
 import setup19Exercise from "./19-exercise-setup";
 
 if (process.env.NODE_ENV !== "test") {
-    setup19Exercise(() => console.log(ana));
+  setup19Exercise(() => console.log(ana));
 }
