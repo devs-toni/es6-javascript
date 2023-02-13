@@ -11,9 +11,9 @@
 
 // Finish the code of the function
 function exercise07() {
-    let func = "";
-
-    // Don’t change the code bellow this line
+    let func = (a, b) => {
+      return a + b;
+    };
     return func;
 }
 
